@@ -26,6 +26,8 @@ class HomePage extends StatelessWidget {
   final markers = List.generate(
     1000,
     (i) => Marker(
+      width: 52,
+      height: 52,
       point: LatLng(39.5 + Random().nextDouble(), 116 + Random().nextDouble()),
       builder: (context) => const FlutterLogo(),
     ),
@@ -49,7 +51,7 @@ class HomePage extends StatelessWidget {
                 'https://webrd01.is.autonavi.com/appmaptile?size=1&scale=1&style=7&x={x}&y={y}&z={z}',
           ),
           MarkerClusterLayerOptions(
-            size: const Size(40, 40),
+            size: const Size(42, 42),
             maxClusterRadius: 200,
             disableClusteringAtZoom: 12,
             showPolygon: false,
