@@ -47,16 +47,6 @@ class HomePage extends StatelessWidget {
             tileProvider: const CachedTileProvider(),
             urlTemplate:
                 'https://webrd01.is.autonavi.com/appmaptile?size=1&scale=1&style=7&x={x}&y={y}&z={z}',
-            // urlTemplate:
-            //     'https://m1.map.gtimg.com/hwap?z={z}&x={x}&y={y}&styleid=1000&scene=0&version=884',
-            // tms: true,
-            // templateFunction: (url, data) {
-            //   url = url.replaceAll('{x}', '${int.parse(data['x']!)}');
-            //   url = url.replaceAll('{y}', '${int.parse(data['y']!)}');
-            //   url = url.replaceAll('{z}', '${int.parse(data['z']!) - 1}');
-            //   return url;
-            // },
-            // retinaMode: true,
           ),
           MarkerClusterLayerOptions(
             size: const Size(40, 40),
